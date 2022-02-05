@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">MVC STOK</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/Kategori/Index">KATEGORİLER</a></li>
+                <li><a href="/Urun/Index">ÜRÜNLER</a></li>
+                <li><a href="/Musteri/Index">MÜŞTERİLER</a></li>
+                <li><a href="/Satis/Index">SATIŞLAR</a></li>
+                <li><a href="/Hakkimda/Index">HAKKIMDA</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+</body>
+</html>
+
